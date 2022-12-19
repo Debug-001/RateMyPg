@@ -1,9 +1,9 @@
 import React from 'react'
 import { BsHouse } from 'react-icons/bs'
-import { IoIosFlash } from 'react-icons/io'
-import first from '../assets/first.png'
-import second from '../assets/second.png'
-import third from '../assets/third.png'
+import { FcViewDetails } from 'react-icons/fc'
+import { FcHome } from 'react-icons/fc'
+import review from '../assets/review.png'
+import footer_logo from '../assets/footer_logo.jpg';
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
                   <div className="icon">
                     <BsHouse color="black" size={26} />
                   </div>
-                  <a class="navbar-text" href="/">RateMyPG.com</a>
+                  <a class="navbar-brand" style={{ "font-size": "2.2rem" }} href="/">RateMyPG.com</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -45,66 +45,177 @@ const Home = () => {
         </div>
       </div>
 
-
-      {/* start of corousel section */}
-      <div className="container1">
+      {/* start of input section */}
+      <div className="container1-fullwidth">
         <div className="row">
-          <div className="col-md-10 col-10 mx-auto ">
-            <h1>Find perfect PG as per your needs.&nbsp; 
-            <span className='sub-text'>&nbsp; Fast and quick<IoIosFlash color="yellow" size={130} /></span> </h1>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src={first} class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src={second} class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src={third} class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+          <div className="col-md-12 col-10 ">
+            <h1>THE #1 SITE FOR CHRIST PG REVIEWS</h1>
+            <div class="input-group mb-3 mx-auto">
+              <input type="text" class="form-control" placeholder='Search for your School or Dorm' col-100 aria-describedby="basic-addon1" />
             </div>
           </div>
         </div>
-        </div>
-
-        {/* start of review section */}
-        <div className="container1">
-          <div className="row">
-            <div className="col-md-10 col-10 mx-auto "><h1>thiiss</h1>
-            </div>
-          </div>
-        </div>
-
-
       </div>
-      )
+
+      {/* star of grid section */}
+      <div class="container-fluid" style={{ "background-color": "aliceblue" }}>
+        <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+            <div class="row">
+              <div class="col-md-6 col-12 hero-text order-1">
+                <h1>Choosing a dorm just got easier</h1>
+                <h2> <FcHome size={38} /> Read student reviews</h2>
+                <p>How was your experience at your dorm? You can help incoming freshmen and other classmates by writing a completely anonymous review and adding photos. We just require that you sign in with your email.</p>
+                <h2><FcViewDetails size={38} />  Write an anonymous review</h2>
+                <p>We've collected reviews for over 1,000 dorms in the United States. Find your school and browse our student-generated reviews to help you find your next dorm.</p>
+              </div>
+              <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                <figure>
+                  <img class="img" src={review} alt="herosection_image" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* start of review grid section */}
+      <div class="container-fluid mt-2">
+        <div class="row">
+          <div class="col-md-10  col-12 mx-auto">
+            <h3 class="text-center main-heading">Most Reviewed Schools</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services settings">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services speedup">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services privacy">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services backups">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services ssl">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services database">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services database">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services database">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services database">
+                    <div class="icon"> <img src="" /> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* start of recent reviews section */}
+      <div class="container-fluid mt-2" style={{ "background-color": "aliceblue" }}>
+        <div class="row">
+          <div class="col-md-10  col-12 mx-auto">
+            <h3 class="text-center main-heading">Recent Reviews</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services settings">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, temporibus!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services speedup">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sint!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="our-services privacy">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* start of footer section */}
+      <div class="container-fluid mt-" style={{ "background-color": "white" }}>
+        <div class="row">
+          <div class="col-md-10  col-12 mx-auto">
+            <img className="footer-logo" src={footer_logo} alt="footer-logo" />
+          <h3 class= "footer-text text-center main-heading">RateMyPg.com</h3>
+          <ul className='footer-links'>
+            <li>
+              <a class= "text-center" href="/">About us</a>
+            </li>
+            <li>
+              <a href="/">Help</a>
+            </li>
+            <li>
+              <a href="/">Terms and condition</a>
+            </li>
+            <li>
+              <a href="/">Privacy policy</a>
+            </li>
+          </ul>
+          <p className="footer-sub-text text-center">2022 RateMyPG.  &nbsp; All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  )
 }
 
-      export default Home
+export default Home

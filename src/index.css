@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
-  font-family: "Poiret One", cursive;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   text-decoration: none !important;
+  list-style: none;
 }
+
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 
 .row {
   margin: 0;
@@ -25,47 +28,11 @@ html {
   box-shadow: 2px 4px 13px 1px rgba(8, 8, 8, 0.04);
 }
 
-.navbar-text{
-  padding-left: 1rem;
-}
 .navbar,
 .navbar-style {
   letter-spacing: 0.3rem;
   padding-left: 7rem;
   font-size: 2rem;
-}
-.container1{
-  margin-top: 7rem !important;
-}
-
-
-.icon{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start !important;
-  padding-right: .8rem;
-}
-
-h1{
-  font-size: 7rem;
-  color: rgb(255, 0, 72);
-}
-.sub-text{
-  font-size: 10rem;
-  color: rgb(140, 0, 255);
-}
-
-h5,p{
-  font-size: 3rem;
-  color: rgb(234, 184, 184);
-}
-
-
-
-.carousel{
-width: 90%;
-margin-left: 8rem;
-margin-top: 2rem;
 }
 
 @media (max-width: 1280px) {
@@ -73,11 +40,33 @@ margin-top: 2rem;
   .navbar-style,.navbar-text {
     padding-left: 1rem;
   }
-  .navbar-text {
-    padding-left: 2.5rem;
+
+  .navbar-brand{
+    margin-left: 2rem;
   }
-  .carousel{
-    margin-left: 0rem;
-    width: 100%;
+
+  h1{
+    margin-bottom: 2rem;
+    word-spacing: 0 !important;
   }
+
+  .icon{
+    padding-right: 0 !important ;
+    margin-left: 0 !important;
+    margin-top:-.5rem;
+}
+  
+
+  .input-group{
+    margin-left: 5rem !important;
+    width: 90% !important;
+  }
+
+  .card{
+   display: none;
+  }
+  
+  .icon{
+    margin-left: 1rem;
+  }  
 }
