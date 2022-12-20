@@ -4,8 +4,12 @@ import { FcHome } from 'react-icons/fc'
 import review from '../assets/review.png'
 import { BsHouse } from 'react-icons/bs'
 import footer_logo from '../assets/footer_logo.jpg';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Home = () => {
+
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+
   return (
     <div>
       {/* navbar section starts */}
@@ -33,7 +37,22 @@ const Home = () => {
                       <li class="nav-item">
                         <a class="nav-link" href="/explore">Explore</a>
                       </li>
-                      <a class="btn btn-outline-dark" href="/signup" role="button">SignUp</a>
+                        {isAuthenticated && 
+
+                      <li className='user-info'>
+                        <p>{user.name}</p>
+                      </li>
+                        }
+
+                      {isAuthenticated ? (
+                        <li>
+                          <button type="button" className='btn btn-outline-dark' onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>
+                        </li>
+                      ) : (
+                        <li>
+                          <button type="button" className='btn btn-outline-dark' onClick={() => loginWithRedirect()}>Login</button>
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </div>
@@ -100,7 +119,7 @@ const Home = () => {
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services privacy">
-                    <div class="icon"> <img src="" alt=''/> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
@@ -109,7 +128,7 @@ const Home = () => {
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services backups">
-                    <div class="icon"> <img src=""  alt=''/> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
@@ -130,21 +149,21 @@ const Home = () => {
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" alt=''/> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" alt=''/> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" alt=''/> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
@@ -191,22 +210,22 @@ const Home = () => {
         <div class="row">
           <div class="col-md-10  col-12 mx-auto">
             <img className="footer-logo" src={footer_logo} alt="footer-logo" />
-          <h3 class= "footer-text text-center main-heading">RateMyPg.com</h3>
-          <ul className='footer-links'>
-            <li>
-              <a class= "text-center" href="/">About us</a>
-            </li>
-            <li>
-              <a href="/">Help</a>
-            </li>
-            <li>
-              <a href="/">Terms and condition</a>
-            </li>
-            <li>
-              <a href="/">Privacy policy</a>
-            </li>
-          </ul>
-          <p className="footer-sub-text text-center">2022 RateMyPG.  &nbsp; All Rights Reserved.</p>
+            <h3 class="footer-text text-center main-heading">RateMyPg.com</h3>
+            <ul className='footer-links'>
+              <li>
+                <a class="text-center" href="/">About us</a>
+              </li>
+              <li>
+                <a href="/">Help</a>
+              </li>
+              <li>
+                <a href="/">Terms and condition</a>
+              </li>
+              <li>
+                <a href="/">Privacy policy</a>
+              </li>
+            </ul>
+            <p className="footer-sub-text text-center">2022 RateMyPG.  &nbsp; All Rights Reserved.</p>
           </div>
         </div>
       </div>
