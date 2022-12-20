@@ -40,7 +40,7 @@ const Home = () => {
                         {isAuthenticated && 
 
                       <li className='user-info'>
-                        <p>{user.name}</p>
+                        <p>Welcome! {user.name}</p>
                       </li>
                         }
 
