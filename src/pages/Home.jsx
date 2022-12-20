@@ -1,8 +1,8 @@
 import React from 'react'
-import { BsHouse } from 'react-icons/bs'
 import { FcViewDetails } from 'react-icons/fc'
 import { FcHome } from 'react-icons/fc'
 import review from '../assets/review.png'
+import { BsHouse } from 'react-icons/bs'
 import footer_logo from '../assets/footer_logo.jpg';
 
 const Home = () => {
@@ -28,14 +28,12 @@ const Home = () => {
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/">Link</a>
+                        <a class="nav-link" href="/about">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/">About</a>
+                        <a class="nav-link" href="/explore">Explore</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/">Explore</a>
-                      </li>
+                      <a class="btn btn-outline-dark" href="/signup" role="button">SignUp</a>
                     </ul>
                   </div>
                 </div>
@@ -51,7 +49,7 @@ const Home = () => {
           <div className="col-md-12 col-10 ">
             <h1>THE #1 SITE FOR CHRIST PG REVIEWS</h1>
             <div class="input-group mb-3 mx-auto">
-              <input type="text" class="form-control" placeholder='Search for your School or Dorm' col-100 aria-describedby="basic-addon1" />
+              <input type="text" class="form-control" placeholder='Search for your School or PG' col-100 aria-describedby="basic-addon1" />
             </div>
           </div>
         </div>
@@ -80,29 +78,29 @@ const Home = () => {
       </div>
 
       {/* start of review grid section */}
-      <div class="container-fluid mt-2">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-10  col-12 mx-auto">
-            <h3 class="text-center main-heading">Most Reviewed Schools</h3>
+            <h3 class="text-center main-heading">Most Reviewed PG's</h3>
             <div class="row">
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services settings">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services speedup">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services privacy">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt=''/> </div>
                   </div>
                 </div>
               </div>
@@ -111,42 +109,42 @@ const Home = () => {
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services backups">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src=""  alt=''/> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services ssl">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt='' /> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt=''/> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt=''/> </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="box">
                   <div class="our-services database">
-                    <div class="icon"> <img src="" /> </div>
+                    <div class="icon"> <img src="" alt=''/> </div>
                   </div>
                 </div>
               </div>
