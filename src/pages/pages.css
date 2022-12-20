@@ -186,8 +186,7 @@ a:hover{
 .our-services:hover{
 background-color: rgb(255, 190, 106);
 opacity: 90%;
-filter: blur(30%);
-
+filter: blur(40%);
 }
 
 .footer-logo {
