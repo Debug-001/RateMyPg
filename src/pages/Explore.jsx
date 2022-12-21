@@ -1,12 +1,15 @@
 import React from 'react'
 import { BsHouse } from 'react-icons/bs'
 import footer_logo from '../assets/footer_logo.jpg';
+import '../pages/explore.css'
+import {BiImageAlt} from 'react-icons/bi'
+// import {BsArrowLeft} from 'react-icons/bs'
 
 
 const Explore = () => {
   return (
     <div>
-  <div className="container-fullwidth">
+      <div className="container-fullwidth">
         <div className="container-fluid navbar-style py-4" >
           <div className="row">
             <div className="col-md-12 col-12 ">
@@ -40,29 +43,54 @@ const Explore = () => {
         </div>
       </div>
 
-      <div class="container-fluid mt-" style={{ "background-color": "white" }}>
-      <div class="row">
-        <div class="col-md-10  col-12 mx-auto">
-          <img className="footer-logo" src={footer_logo} alt="footer-logo" />
-          <h3 class="footer-text text-center main-heading">RateMyPg.com</h3>
-          <ul className='footer-links'>
-            <li>
-              <a class="text-center" href="/">About us</a>
-            </li>
-            <li>
-              <a href="/">Help</a>
-            </li>
-            <li>
-              <a href="/">Terms and condition</a>
-            </li>
-            <li>
-              <a href="/">Privacy policy</a>
-            </li>
-          </ul>
-          <p className="footer-sub-text text-center">2022 RateMyPG.  &nbsp; All Rights Reserved.</p>
+      {/* Pg review section */}
+      <div className="container2-fullwidth">
+        <div className="main">
+          <div className="col-md-12 col-12">
+            <h3>Christ Residence Hall  </h3></div>
+            <div><button className='button' type="btn btn-primary"> <BiImageAlt size={25}/>0 photos</button>
+          </div>
+          </div>
+          </div>
+
+        <div className="container">
+
+        </div>
+          {/* <div className="row">
+          <div className="col-md-12 col-12 mt-5 pt-3">
+            <a href='/'>
+           <h6><BsArrowLeft size={16}/>&nbsp;All Christ Univeristy Dorms
+           </h6>
+           </a>
+          </div>
+          </div>
+        </div>
+      </div> */}
+
+
+      <div class="container-fluid mt-5 bh-gray-5">
+        <div class="row">
+          <div class="col-md-10  col-12 mx-auto">
+            <img className="footer-logo" src={footer_logo} alt="footer-logo" />
+            <h3 class="footer-text text-center main-heading">RateMyPg.com</h3>
+            <ul className='footer-links'>
+              <li>
+                <a class="text-center" href="/">About us</a>
+              </li>
+              <li>
+                <a href="/">Help</a>
+              </li>
+              <li>
+                <a href="/">Terms and condition</a>
+              </li>
+              <li>
+                <a href="/">Privacy policy</a>
+              </li>
+            </ul>
+            <p className="footer-sub-text text-center">2022 RateMyPG.  &nbsp; All Rights Reserved.</p>
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
   )

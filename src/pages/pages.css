@@ -170,7 +170,7 @@ a:hover{
   background-color: #fff;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 
@@ -181,8 +181,49 @@ a:hover{
   background-color: #fff;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
+
+.review h6{
+  font-size: 1.3rem !important;
+  margin-left: -1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+  color: rgb(54, 54, 54);
+}
+
+.review p{
+  margin-left: 2.6rem;
+  color: #474747;
+}
+
+
+.review-icon{
+  margin-right: 1rem;
+}
+
+.review-stars{
+  margin-top: -17rem;
+  /* margin-left: 1rem; */
+  /* color: yellow; */
+}
+
+.review:hover{
+  background-color: rgb(255, 79, 152);
+  color: white !important;
+}
+
+.review h2{
+  font-size: 1.6rem;
+  margin-top: -6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  color: black;
+}
+
+
+
 .our-services:hover{
 background-color: rgb(255, 190, 106);
 opacity: 90%;
@@ -257,6 +298,28 @@ filter: blur(40%);
 
 
 @media (max-width: 1280px) {
+
+.review-stars{
+  margin-left: -.1rem;
+}
+
+.review h6{
+font-size: 1.2rem !important;
+}
+
+.review p{
+  padding-left: 3rem;
+}
+
+.review-icon{
+  margin-right: .5rem;
+}
+
+.review h2{
+  margin-top: -6rem !important;
+  color: rgb(45, 45, 147);
+}
+
   .hero-text h1 {
     margin-left: 3rem;
     margin-top: 10rem !important;
