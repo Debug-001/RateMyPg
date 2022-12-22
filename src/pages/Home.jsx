@@ -8,6 +8,7 @@ import { AiOutlineStar } from 'react-icons/ai'
 import { AiFillStar } from 'react-icons/ai'
 import footer_logo from '../assets/footer_logo.jpg';
 import { useAuth0 } from "@auth0/auth0-react";
+import './home.css'
 
 
 const Home = () => {
@@ -329,10 +330,10 @@ const Home = () => {
                 <a href="/">Help</a>
               </li>
               <li>
-                <a href="/">Terms and condition</a>
+                <a href="/tc">Terms and condition</a>
               </li>
               <li>
-                <a href="/">Privacy policy</a>
+                <a href="/privacy">Privacy policy</a>
               </li>
             </ul>
             <p className="footer-sub-text text-center">2022 RateMyPG.  &nbsp; All Rights Reserved.</p>

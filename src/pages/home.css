@@ -204,13 +204,11 @@ a:hover{
 
 .review-stars{
   margin-top: -17rem;
-  /* margin-left: 1rem; */
-  /* color: yellow; */
 }
 
 .review:hover{
-  background-color: rgb(255, 79, 152);
-  color: white !important;
+  background-color: rgb(146, 222, 255);
+  /* color: white !important; */
 }
 
 .review h2{
@@ -222,11 +220,9 @@ a:hover{
   color: black;
 }
 
-
-
 .our-services:hover{
 background-color: rgb(255, 190, 106);
-opacity: 90%;
+/* opacity: 90%; */
 filter: blur(40%);
 }
 
